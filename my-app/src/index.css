@@ -1,0 +1,36 @@
+:root {
+  --content-width: 1180px;
+  font-family: 'Glacial Indifference', 'Arial Narrow', Arial, sans-serif;
+  color: #ffffff;
+  background: #03070c;
+  font-synthesis: none;
+  text-rendering: geometricPrecision;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+html {
+  min-width: 320px;
+  background: #03070c;
+}
+
+body {
+  min-width: 320px;
+  min-height: 100vh;
+  margin: 0;
+  background:
+    radial-gradient(circle at 50% 0%, rgba(52, 136, 174, 0.28), transparent 26rem),
+    linear-gradient(180deg, #02070c 0%, #08101a 48%, #05070c 100%);
+}
+
+#root {
+  min-height: 100vh;
+}
+
+img {
+  max-width: 100%;
+}
