@@ -1,4 +1,6 @@
-import logo from '../assets/aeae-footer-logo.png'
+import logo from '../assets/new/logo-cropped-transparent.png'
+import footerVehicle from '../assets/new/footer-vehicle-transparent.png'
+import areaLogo from '../assets/area-transparent.png'
 
 const socialLinks = [
   ['facebook', 'Facebook', 'f'],
@@ -45,20 +47,20 @@ function Footer() {
               <span className={`footer-icon footer-icon--${icon}`} aria-hidden="true" />
             </span>
           ))}
+          <div className="social-row" aria-label="Social links">
+            <span>Follow Us:</span>
+            {socialLinks.map(([name, label, mark]) => (
+              <a href="#contact-us" className={`social-link social-link--${name}`} key={label} aria-label={label}>
+                {mark}
+              </a>
+            ))}
+          </div>
         </div>
       </div>
 
-      <div className="social-row" aria-label="Social links">
-        <span>Follow Us:</span>
-        {socialLinks.map(([name, label, mark]) => (
-          <a href="#contact-us" className={`social-link social-link--${name}`} key={label} aria-label={label}>
-            {mark}
-          </a>
-        ))}
-      </div>
-
       <div className="copyright">
-        <img src={logo} alt="Auto Enhance Asia Expo" className="copyright-logo" />
+        <img src={areaLogo} alt="Auto Enhance Asia Expo" className="copyright-logo" />
+        <img src={footerVehicle} alt="" className="copyright-vehicle" aria-hidden="true" />
         <span>2026-27 Rights Reserved</span>
         <a href="#privacy">Privacy Policy | Terms &amp; Conditions</a>
       </div>
@@ -67,3 +69,4 @@ function Footer() {
 }
 
 export default Footer
+

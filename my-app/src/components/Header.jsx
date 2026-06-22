@@ -1,4 +1,4 @@
-import logo from '../assets/aeae-logo.png'
+import logo from '../assets/new/logo-cropped-transparent.png'
 
 const navItems = ['Home', 'About The Show', 'Exhibitor Profile', 'Visitor Profile', 'Download', 'Contact Us']
 
@@ -12,8 +12,8 @@ function Header() {
 
         <div className="topbar__actions" aria-label="Contact and quick actions">
           <div className="contact-lines">
-            <a href="tel:+917205759414">+91 720 5759914</a>
-            <a href="mailto:sales@autoenhance.com">sales@autoenhance.com</a>
+            <a href="tel:+917205759414" className="contact-lines__phone">+91 720 5759914</a>
+            <a href="mailto:sales@autoenhance.com" className="contact-lines__mail">sales@autoenhance.com</a>
           </div>
           <div className="cta-row">
             <a className="cta-button" href="#register">Want To Exhibit</a>

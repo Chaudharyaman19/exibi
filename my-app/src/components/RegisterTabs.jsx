@@ -1,15 +1,13 @@
-const roles = ['Exhibitor', 'Sponsor', 'Speaker', 'Visitor']
+const tabs = ['Exhibitor', 'Sponsor', 'Speaker', 'Visitor']
 
 function RegisterTabs() {
   return (
-    <section className="register-strip" id="register" aria-label="Registration links">
+    <section className="register-strip" id="register">
       <div className="register-inner">
         <p>Register with us as:</p>
         <div className="register-links">
-          {roles.map((role) => (
-            <a href={`#${role.toLowerCase()}`} key={role}>
-              {role}
-            </a>
+          {tabs.map((tab) => (
+            <a href={`#${tab.toLowerCase()}`} key={tab}>{tab}</a>
           ))}
         </div>
       </div>
